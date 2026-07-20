@@ -1,0 +1,26 @@
+generated: '2026-07-17'
+method: searched
+source: https://saia.3dlook.me/docs/ ; https://docs.fitxpress.3dlook.me/
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+  notes: API-key / token authentication carried in the Authorization header; no OAuth2 surface documented.
+schemes:
+- name: SaiaApiKey
+  type: apiKey
+  in: header
+  parameter: Authorization
+  format: "APIKey <YOUR_API_KEY>"
+  api: SAIA Perfect Fit / Mobile Tailor (MTM) API
+  docs: https://saia.3dlook.me/docs/
+  key_source: Mobile Tailor admin panel
+  sources: [https://saia.3dlook.me/docs/]
+- name: FitXpressToken
+  type: apiKey
+  in: header
+  parameter: Authorization
+  format: "Token <ACCESS_TOKEN>"
+  api: FitXpress API
+  docs: https://docs.fitxpress.3dlook.me/
+  sources: [https://docs.fitxpress.3dlook.me/]
