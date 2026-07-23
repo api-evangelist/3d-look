@@ -1,0 +1,44 @@
+generated: '2026-07-17'
+method: derived
+status: candidate
+source: https://saia.3dlook.me/docs/ ; https://docs.fitxpress.3dlook.me/
+note: >-
+  No official 3DLOOK MCP server was found. This is a candidate tool list derived
+  from the documented REST operations of the SAIA and FitXpress APIs.
+server:
+  name: 3d-look
+  transport: http
+tools:
+- name: create_person
+  description: Create a SAIA person (optionally with base64 front/side photos, gender, height, weight) to start a measurement.
+  source_operation: "SAIA POST /api/v2/persons/"
+- name: get_person
+  description: Retrieve a SAIA person with calculated body measurements.
+  source_operation: "SAIA GET /api/v2/persons/{id}/"
+- name: list_persons
+  description: List SAIA persons (paginated).
+  source_operation: "SAIA GET /api/v2/persons/"
+- name: update_person_photos
+  description: Upload/replace front and side photos for a SAIA person.
+  source_operation: "SAIA PUT /api/v2/persons/{id}/"
+- name: calculate_person
+  description: Trigger recalculation of a SAIA person's measurements.
+  source_operation: "SAIA GET /api/v2/persons/{id}/calculate/"
+- name: get_task_status
+  description: Poll the status of an asynchronous SAIA measurement task set.
+  source_operation: "SAIA GET /api/v2/queue/{task_set_id}/"
+- name: create_measurement
+  description: Create a FitXpress body measurement from front/side photos, height, weight, gender, age.
+  source_operation: "FitXpress POST /api/1.0/measurements/"
+- name: get_measurement
+  description: Retrieve FitXpress measurement data and health/body-composition results.
+  source_operation: "FitXpress GET /api/1.0/measurements/{id}/"
+- name: predict_model
+  description: Generate a predicted 3D body model for a target weight.
+  source_operation: "FitXpress POST /api/1.0/measurements/{id}/predict_model/"
+- name: create_body_progress
+  description: Create a 3D body-progress comparison between two FitXpress measurements.
+  source_operation: "FitXpress POST /api/1.0/body_progress/"
+- name: get_subscription
+  description: Check current FitXpress subscription status and usage limits.
+  source_operation: "FitXpress GET /api/1.0/subscriptions/current/"

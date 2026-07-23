@@ -1,0 +1,35 @@
+generated: '2026-07-17'
+method: searched
+source: https://saia.3dlook.me/docs/
+api: SAIA Perfect Fit / Mobile Tailor (MTM) API
+envelope: JSON body with error detail; HTTP status conveys transport-level errors, task-level codes returned in the async task result.
+http_status:
+- status: 400
+  title: Bad Request
+- status: 401
+  title: Unauthorized
+  remediation: Missing or invalid API key in Authorization header.
+- status: 403
+  title: Forbidden
+- status: 404
+  title: Not Found
+- status: 422
+  title: Unprocessable Entity
+  remediation: Photo processing failed / input could not be processed.
+- status: 429
+  title: Too Many Requests
+  remediation: Rate limit exceeded; retry later.
+- status: 500
+  title: Internal Server Error
+- status: 503
+  title: Service Unavailable
+task_codes:
+  range: 900-923
+  description: >-
+    Application-level task error and soft-validation codes returned by the
+    asynchronous measurement calculation. Indicate pose issues, body-detection
+    failures, and soft validation warnings (e.g. head tilt, hand/arm placement,
+    incorrect distance, poor lighting) that require the end user to retake photos.
+  categories:
+  - pose / body-detection failures
+  - soft validation warnings (head tilt, hand placement, distance)

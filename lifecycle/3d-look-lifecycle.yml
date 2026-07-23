@@ -1,0 +1,20 @@
+generated: '2026-07-17'
+method: searched
+source: https://saia.3dlook.me/docs/ ; https://docs.fitxpress.3dlook.me/
+versioning:
+  scheme: uri-path
+  apis:
+  - api: SAIA Perfect Fit / Mobile Tailor (MTM) API
+    current: v2
+    base: https://saia.3dlook.me/api/v2/
+  - api: FitXpress API
+    current: '1.0'
+    base: https://backend.fitxpress.3dlook.me/api/1.0/
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No public deprecation/sunset policy documented.
+sla:
+  url: null
+status_page: null
+notes: No public status page or documented uptime SLA was found at probe time (2026-07-17).

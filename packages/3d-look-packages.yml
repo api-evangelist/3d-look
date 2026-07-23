@@ -1,0 +1,34 @@
+generated: '2026-07-17'
+method: searched
+source: https://github.com/3dlook-me ; https://www.npmjs.com/package/@3dlook/saia-sdk
+packages:
+- language: javascript
+  registry: npm
+  name: "@3dlook/saia-sdk"
+  version: 2.17.0
+  url: https://www.npmjs.com/package/@3dlook/saia-sdk
+  repo: https://github.com/3dlook-me/saia-sdk
+  install: npm install @3dlook/saia-sdk
+  description: JavaScript SDK / API wrapper for the SAIA Perfect Fit (Mobile Tailor) API.
+  license: ISC
+  official: true
+- language: swift-objc
+  registry: github
+  name: ios_sdk_public
+  url: https://github.com/3dlook-me/ios_sdk_public
+  install: "Swift Package Manager / CocoaPods (see repo)"
+  description: iOS Camera / body-scan capture SDK.
+  official: true
+- language: kotlin-java
+  registry: github
+  name: android_sdk_public
+  url: https://github.com/3dlook-me/android_sdk_public
+  install: "Gradle (see repo)"
+  description: Android Camera / body-scan capture SDK.
+  official: true
+- language: javascript
+  registry: github
+  name: camera-widget-react
+  url: https://github.com/3dlook-me/camera-widget-react
+  description: React camera widget for photo capture in the measurement flow.
+  official: true

@@ -1,0 +1,25 @@
+generated: '2026-07-17'
+method: searched
+source: https://github.com/3dlook-me ; https://pf-widget.3dlook.me/
+description: >-
+  Embeddable client-side widgets that host the photo-capture and measurement
+  flow so integrators can add body scanning to a web or mobile app without
+  building the capture UX. Distinct from the server-side SDKs in packages/.
+families:
+- name: SAIA Perfect Fit Widget
+  components:
+  - name: standard-pf-widget
+    url: https://github.com/3dlook-me/standard-pf-widget
+    hosted: https://pf-widget.3dlook.me/
+    description: PerfectFit size-recommendation widget by 3DLOOK.
+  - name: standard-mtm-widget
+    url: https://github.com/3dlook-me/standard-mtm-widget
+    description: Standard Made-To-Measure measurement widget.
+- name: Camera capture
+  components:
+  - name: widget-camera
+    url: https://github.com/3dlook-me/widget-camera
+    description: Camera capture widget (template) for the photo-capture step.
+  - name: camera-widget-react
+    url: https://github.com/3dlook-me/camera-widget-react
+    description: React camera widget for photo capture.

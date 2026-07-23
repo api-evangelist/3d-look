@@ -1,0 +1,31 @@
+generated: '2026-07-17'
+method: searched
+source: https://saia.3dlook.me/docs/ ; https://docs.fitxpress.3dlook.me/
+authentication:
+  style: api-key
+  header: Authorization
+  formats: ["APIKey <key> (SAIA)", "Token <token> (FitXpress)"]
+  ref: authentication/3d-look-authentication.yml
+async_processing:
+  model: asynchronous
+  description: >-
+    Measurement calculation from photos runs asynchronously. SAIA returns a
+    task-set id; clients poll GET /queue/{task_set_id}/ until the task completes.
+    FitXpress requests carry a status field (pending, in_progress, successful,
+    failed) polled on the measurement/body-progress resource.
+  poll_endpoints:
+    saia: GET /queue/{task_set_id}/
+    fitxpress: GET /measurements/{id}/ (status field)
+pagination:
+  style: paginated-list
+  description: List endpoints (e.g. SAIA GET /persons/) return paginated collections.
+error_envelope:
+  ref: errors/3d-look-error-codes.yml
+  transport: HTTP status codes (400/401/403/404/422/429/5xx)
+  task_level: numeric task codes 900-923 for pose/validation failures
+idempotency:
+  supported: false
+  notes: No idempotency-key header documented in the public API references.
+versioning:
+  saia: URI path (/api/v2/)
+  fitxpress: URI path (/api/1.0/)

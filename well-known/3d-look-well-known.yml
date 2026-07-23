@@ -1,0 +1,37 @@
+generated: '2026-07-17'
+method: searched
+source: live probes 2026-07-17
+note: >-
+  Probed /.well-known/ on the SAIA, FitXpress, and marketing hosts. The SAIA host
+  returns HTTP 200 for arbitrary /.well-known/ paths but the body is the SPA HTML
+  catch-all (content-type text/html), NOT a valid discovery document — so no real
+  well-known artifacts were captured and no WellKnown/SecurityTxt pointer is wired.
+hosts:
+- host: https://saia.3dlook.me
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    valid: false
+    reason: HTML SPA catch-all (text/html), not RFC 9116 text
+  - path: /.well-known/openid-configuration
+    status: 200
+    valid: false
+    reason: HTML SPA catch-all, not JSON OIDC metadata
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    valid: false
+    reason: HTML SPA catch-all, not RFC 8414 JSON
+  - path: /.well-known/api-catalog
+    status: 200
+    valid: false
+    reason: HTML SPA catch-all, not RFC 9727 catalog
+- host: https://backend.fitxpress.3dlook.me
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://3dlook.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
