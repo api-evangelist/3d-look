@@ -36,6 +36,17 @@ modified: '2026-07-17'
 tags:
 - Company
 - Body Measurement
+- Computer-Vision
+- Artificial Intelligence
+- Apparel
+- Fashion Technology
+- Health and Fitness
+- Sizing
+- 3D Body Scanning
+- SDK
+tags_raw:
+- Company
+- Body Measurement
 - Computer Vision
 - Artificial Intelligence
 - Apparel
@@ -53,6 +64,10 @@ apis:
   humanURL: https://saia.3dlook.me/docs/
   baseURL: https://saia.3dlook.me/api/v2/
   tags:
+  - Body Measurement
+  - Made-to-Measure
+  - Sizing
+  tags_raw:
   - Body Measurement
   - Made to Measure
   - Sizing
