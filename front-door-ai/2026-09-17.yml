@@ -1,0 +1,25 @@
+# Front Door AI Index — 3d-look — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: 3d-look
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: 3dlook.ai
+  final_host: 3dlook.ai
+  ownership: own
+  owner: 3d-look
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 19
+  host_score: 19
+  density: 18.3
+  words: 1038
+  tiers:
+    agentic: 0
+    core: 19
+    model: 0
+  ambiguous: 0
+  top_terms:
+    AI: 19
