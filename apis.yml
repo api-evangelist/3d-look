@@ -48,7 +48,7 @@ modified: '2026-07-17'
 tags:
 - Company
 - Body Measurement
-- Computer-Vision
+- Computer Vision
 - Artificial Intelligence
 - Apparel
 - Fashion Technology
@@ -67,6 +67,7 @@ tags_raw:
 - Sizing
 - 3D Body Scanning
 - SDK
+- Computer-Vision
 apis:
 - name: SAIA Perfect Fit / Mobile Tailor (MTM) API
   description: >-
