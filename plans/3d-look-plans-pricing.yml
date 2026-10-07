@@ -1,0 +1,65 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://3dlook.ai/pricing/
+sources:
+- https://3dlook.ai/pricing/
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Two product families (Mobile Tailor, FitXpress) with monthly/annual toggle offering 'save up to
+  20%' (Save 10%/Save 20% noted per tier). Top tiers are Custom. API/SDK access included in higher tiers.
+plan_count: 6
+currency: USD
+plans:
+- name: Mobile Tailor Basic
+  price_text: $ 499 / month
+  price: 499
+  currency: USD
+  period: month
+  unit: scans
+  included_quota: Up to 100 scans per month
+- name: Mobile Tailor Premium
+  price_text: $ 999 / month
+  price: 999
+  currency: USD
+  period: month
+  unit: scans
+  included_quota: Up to 500 scans per month
+- name: Mobile Tailor Enterprise
+  price_text: $ Custom / month
+  period: month
+  unit: scans
+  included_quota: 500+ scans per month
+- name: FitXpress Starter
+  price_text: $ 1 000 / month
+  price: 1000
+  currency: USD
+  period: month
+  unit: scans
+  included_quota: Up to 500 scans per month
+- name: FitXpress Pro
+  price_text: $ 1 500 / month
+  price: 1500
+  currency: USD
+  period: month
+  unit: scans
+  included_quota: Up to 1000 scans per month
+- name: FitXpress Personalized
+  price_text: $ Custom / month
+  period: month
+  unit: scans
+  included_quota: Scalable scan volumes
+rate_limit_statements:
+- Up to 100 scans per month
+- Up to 500 scans per month
+- Up to 1000 scans per month
+- Flexible scan volumes (1000+ per plan)
