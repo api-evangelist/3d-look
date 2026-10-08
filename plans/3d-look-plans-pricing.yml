@@ -63,3 +63,58 @@ rate_limit_statements:
 - Up to 500 scans per month
 - Up to 1000 scans per month
 - Flexible scan volumes (1000+ per plan)
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Mobile Tailor Basic
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Mobile Tailor Premium
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Mobile Tailor Enterprise
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: FitXpress Starter
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: FitXpress Pro
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: FitXpress Personalized
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
